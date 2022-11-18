@@ -100,5 +100,37 @@ ________________________________________________________________________________
 
 QUESTION 5
 
+//Palindrome checking
+
+#include<stdio.h>
+#include<string.h>
+void main(){
+    char s[50];
+    int s1,j,i,n,y;
+    printf("Enter the string: ");
+    scanf("%s",s);
+    n=strlen(s);
+    s1=n-1;
+    for(j=0;j<n;j++){
+        if(s[s1]==s[j]){
+            y=1;
+        }
+        else{
+            y=0;
+            break;
+        }
+        s1-=1;
+    }
+    if(y==1){
+        printf("Yes it is a palindrome");
+    }
+    else{
+        printf("No it is not a palindrome");
+    }
+    
+}
+__________________________________________________________________________________________________________________________________________
+
+QUESTION 6
 
 
