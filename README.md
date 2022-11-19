@@ -332,3 +332,112 @@ ________________________________________________________________________________
 
 QUESTION 13
 
+________________________________________________________________________________________________________________________________________________
+
+QUESTION 14
+
+//Maximum money
+
+#include<stdio.h>
+void main(){
+    int money=0;
+    int amount,house,i;
+    printf("Enter number of houses: ");
+    scanf("%d",&house);
+    printf("Enter the amount: ");
+    scanf("%d",&amount);
+    for(i=1;i<=house;i++){
+        if(i%2!=0){
+        money+=amount;}
+    }
+    printf("Total amount is: %d",money);
+}
+___________________________________________________________________________________________________________________________________________________________
+
+QUESTION 15
+
+//Range sum
+
+#include<stdio.h>
+
+void main(){
+    int n,a,b,arr[50],arr1[50],j,flag,i;
+    flag=0;
+    printf("Enter the value for n: ");
+    scanf("%d",&n);
+    printf("Enter the value for a: ");
+    scanf("%d",&a);
+    printf("Enter the value for b: ");
+    scanf("%d",&b);
+    for(i=0;i<n;i++){
+        scanf("%d",&arr[i]);
+    }
+    for(j=0;j<n;j++){
+        arr1[j]=a;
+        ++a;
+        if(a==b){
+            break;
+        }
+    }
+    arr1[j+1]=b;
+    for(i=0;i<n;i++){
+        for(j=0;j<n;j++){
+        if(arr[i]==arr1[j]){
+            flag=1;
+        }
+    }
+        
+    }
+    if(flag==1){
+        printf("They are in range");
+    }
+    else{
+        printf("Not in range");
+    }
+}
+
+_______________________________________________________________________________________________________________________________________________________
+
+QUESTION 16
+
+//Fine for the car
+
+#include<stdio.h>
+void main(){
+    int car[50],fine[50],n,date,i,j,finesum;
+    finesum=0;
+    printf("Enter the value for n: ");
+    scanf("%d",&n);
+    printf("Enter the value for date: ");
+    scanf("%d",&date);
+    for(i=0;i<n;i++){
+        printf("Enter the car number: ");
+        scanf("%d",&car[i]);
+        printf("Enter the fine: ");
+        scanf("%d",&fine[i]);
+    }
+    if(n%2==0){
+        for (i=0;i<n;i++){
+            if(car[i]%2!=0){
+                finesum+=fine[i];
+            }
+        }
+    }
+    else{
+        for (i=0;i<n;i++){
+            if(car[i]%2==0){
+                finesum+=fine[i];
+            }
+        }
+        
+    }
+    printf("The total fine amount is:%d",finesum);
+}
+
+_____________________________________________________________________________________________________________________________________________________
+
+QUESTION 17
+
+
+
+
