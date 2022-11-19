@@ -439,5 +439,28 @@ ________________________________________________________________________________
 QUESTION 17
 
 
+//Sum of numbers using positions
 
+#include<stdio.h>
+void main(){
+    int arr[50],n,i,j,seven,sodd;
+    seven=sodd=0;
+    printf("Enter the value for n: ");
+    scanf("%d",&n);
+    for(i=0;i<n;i++){
+        printf("Enter the element: ");
+        scanf("%d",&arr[i]);
+    }
+    for(i=0;i<n;i++){
+        if(i%2==0){
+            seven+=arr[i];
+        }
+        else{
+            sodd+=arr[i];
+        }
+    }
+    printf("%d\t",seven);
+    printf("%d",sodd);
+}
 
+******************************************************************* END OF PROGRAMS ********************************************************************
