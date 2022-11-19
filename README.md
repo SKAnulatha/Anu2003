@@ -216,3 +216,71 @@ int main(){
     printFibonacci(n-2); 
   return 0;  
  }    
+ 
+ _________________________________________________________________________________________________________________________________________________________
+ 
+ 
+ QUESTION 9
+ 
+ //number of alphabets
+
+#include<stdio.h>
+#include<string.h>
+void main(){
+    int i,n,length;
+    char string[50];
+    n=0;
+    printf("Enter the string: ");
+    scanf("%s",string);
+    length = strlen(string);
+    for(i=0;i<length;i++){
+        if((string[i]>='a' && string[i]<='z') || (string[i]>='A' && string[i]<='Z'))
+            n = n+1;
+        }
+    printf("The length of the string is: %d",n);
+    
+}
+
+__________________________________________________________________________________________________________________________________________________________
+
+QUESTION 10
+
+// Anagrams
+
+#include <stdio.h>
+#include <string.h>
+void main(){
+    int len1,len2,i,j,flag;
+    char str1[50],str2[50];
+    flag = 0;
+    printf("Enter the string 1: ");
+    scanf("%s",str1);
+    printf("Enter the string 2: ");
+    scanf("%s",str2);
+    len1 = strlen(str1);
+    len2 = strlen(str2);
+    for(i=0;i<len1;i++){
+        for(j=0;j<len2;j++){
+            if(str1[i]==str2[j]){
+               
+                flag = 1;
+                
+            }
+            
+            
+        }
+    }
+    if(flag==1){
+        printf("They are anagrams");
+    }
+    else{
+        printf("Not anagrams");
+    }
+}
+
+__________________________________________________________________________________________________________________________________________________
+
+QUESTION 11
+
+
+
