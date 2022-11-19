@@ -282,5 +282,18 @@ ________________________________________________________________________________
 
 QUESTION 11
 
+// Reverse a string
 
+#include<stdio.h>
+#include<string.h>
+void main(){
+    int i,len;
+    char str[50];
+    printf("Enter the string: ");
+    scanf("%s",str);
+    len = strlen(str);
+    for (i=len-1;i>=0;i--){
+        printf("%c",str[i]);
+    }
+}
 
