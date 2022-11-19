@@ -297,3 +297,38 @@ void main(){
     }
 }
 
+___________________________________________________________________________________________________________________________________________________________
+
+QUESTION 12
+
+// Second largest number
+
+#include<stdio.h>
+void main(){
+    int i,max,arr[50],n,sec,diff;
+    printf("Enter the value for n: ");
+    scanf("%d",&n);
+    for(i=0;i<n;i++){
+        scanf("%d",&arr[i]);
+    }
+    max = arr[0];
+    for(i=0;i<n;i++){
+        if(max<arr[i]){
+            max=arr[i];
+        }
+    }
+    sec = arr[0];
+    diff = 90;
+    for(i=0;i<n;i++){
+        if((max-sec)<=diff){
+            diff=max-sec;
+            sec=arr[i];
+        }
+    }
+printf("Second largest number is:%d",sec);
+}
+
+_______________________________________________________________________________________________________________________________________________
+
+QUESTION 13
+
