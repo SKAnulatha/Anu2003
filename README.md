@@ -160,4 +160,35 @@ ________________________________________________________________________________
 QUESTION 7
 
 
+// Search a given element
+
+#include<stdio.h>
+void main(){
+    int i,n,arr[50],x,index;
+    printf("Enter the value for n:");
+    scanf("%d",&n);
+    printf("Enter the element to be found:");
+    scanf("%d",&x);
+    for(i=0;i<n;i++){
+        arr[i]=i+1;
+    }
+    for(i=0;i<n;i++){
+        if(arr[i]==x){
+            index = i;
+            break;
+        }
+        else{
+            index=0;
+        }
+    }
+    if(index!=0){
+        printf("%d found at %d",n,index);
+    }
+    else{
+        printf("not found");
+    }
+    
+}
+______________________________________________________________________________________________________________________________________________________
+
 
