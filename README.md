@@ -133,4 +133,31 @@ ________________________________________________________________________________
 
 QUESTION 6
 
+//Armstrong number
+
+#include<stdio.h>
+void main(){
+    int c,n,temp,sum;
+    printf("Enter the number to be checked:");
+    scanf("%d",&n);
+    sum=0;
+    temp = n;
+    while(n>0){
+        c=n%10;
+        sum+=(c*c*c);
+        n=n/10;
+    }
+    if(temp==sum){
+        printf("Armstrong number!!");
+    }
+    else{
+        printf("not an armstrong number");
+    }
+}
+
+__________________________________________________________________________________________________________________________________________________
+
+QUESTION 7
+
+
 
