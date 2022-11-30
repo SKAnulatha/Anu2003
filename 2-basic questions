@@ -1,0 +1,20 @@
+# Palindrome checking question
+
+def PalinArray(arr ,n):
+    flag = 0
+    for i in arr:
+        item = str(i)
+        
+        if (item[::-1]==item):
+            flag+=1
+        else:
+            flag+=0
+    if flag==n:
+        return 1
+    else:
+        return 0
+
+arr = eval(input())
+n = int(input())
+PalinArray(arr,n)
+
